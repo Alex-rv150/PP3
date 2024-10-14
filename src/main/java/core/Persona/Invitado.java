@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.Persona;
 
-/**
- *
- * @author arang
- */
-public class Invitado {
+import core.Programa.Emision.Emision;
+import java.util.ArrayList;
+
+
+public class Invitado extends Persona{
+    
+    private ArrayList<Emision> emisiones;
+    
+    public Invitado(String nombre) {
+        super(nombre);
+        this.emisiones= new ArrayList<>();
+    }
     
 }
