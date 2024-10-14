@@ -12,4 +12,11 @@ public class Artista extends Persona{
         this.canciones = new ArrayList<>();
     }
     
+    public boolean addCancion(Cancion cancion){
+        if(!this.canciones.contains(cancion)){
+            this.canciones.add(cancion);
+            return true;
+        }
+        return false;
+    }
 }
