@@ -108,6 +108,9 @@ public class RockRollRadio {
     public Artista getArtista(int index) {
         return this.artistas.get(index);
     }
+     public ArrayList<Artista> getArtistas() {
+        return this.artistas;
+    }
 
     public Cancion getCancion(int index) {
         return this.canciones.get(index);
