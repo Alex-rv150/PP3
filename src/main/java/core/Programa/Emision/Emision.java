@@ -21,4 +21,15 @@ public class Emision {
         
         this.programa.addEmision(this);
     }
+    
+    public boolean addInvitado(Invitado invitado){
+    
+        if (!this.invitados.contains(invitado)) {
+            this.invitados.add(invitado);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
 }
