@@ -21,10 +21,10 @@ public class RockRollRadio {
     
     public RockRollRadio (){
     artistas = new ArrayList<>();
-    canciones = new ArrayList<>();;
-    invitados = new ArrayList<>();;
-    locutores =new ArrayList<>();;
-    programas = new ArrayList<>();;
+    canciones = new ArrayList<>();
+    invitados = new ArrayList<>();
+    locutores =new ArrayList<>();
+    programas = new ArrayList<>();
     }
     
    
