@@ -36,6 +36,10 @@ public class Programa {
     public ArrayList<Emision> getEmisiones() {
         return emisiones;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
     
     
 }
