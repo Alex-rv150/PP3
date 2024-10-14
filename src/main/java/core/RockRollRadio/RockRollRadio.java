@@ -123,8 +123,46 @@ public class RockRollRadio {
     public Invitado getInvitado(int index) {
         return this.invitados.get(index);
     }
+    
+    
+    public Programa getProgramaConMasCancionesDeArtista(Artista artista){
+        
+      Programa programa_max = this.programas.get(0);
+      int veces_max = 0;
+      for ( Cancion cancion_artista : artista.getCanciones()) {
+            
+          
+          
+            for (Programa programa: this.programas){
+                int veces = 0 ; 
+                
+                for(Emision emision: programa.getEmisiones()){
+                    
+                    
+                    for(Cancion cancion: emision.getCanciones()){
+                    
+                        if(cancion == cancion_artista){
+                            veces = veces +1;
+                        }
+                    
+                    }
 
-           
+                }
+                
+            if (veces > veces_max){
+            programa_max = programa;
+            }
+            
+            }
+    
+    } 
+      
+    return programa_max;
+        
+    
+    }
+
+    
                     
                 
 }
