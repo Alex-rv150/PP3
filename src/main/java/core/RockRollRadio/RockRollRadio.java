@@ -31,8 +31,8 @@ public class RockRollRadio {
     }
     
     public boolean addLocutor (Locutor locutor){
-    if (!locutores.contains(locutor)){
-    locutores.add(locutor);
+    if (!this.locutores.contains(locutor)){
+    this.locutores.add(locutor);
     return true;
     }else{
     return false;
@@ -42,8 +42,8 @@ public class RockRollRadio {
     
     
     public boolean addPrograma (Programa programa){
-            if (!programas.contains(programa)){
-                programas.add(programa);
+            if (!this.programas.contains(programa)){
+                this.programas.add(programa);
                 return true;
             }else{
                 return false;
@@ -51,8 +51,8 @@ public class RockRollRadio {
         }
     
     public boolean  addArtista (Artista artista){
-            if (!artistas.contains(artista)){
-                artistas.add(artista);
+            if (!this.artistas.contains(artista)){
+                this.artistas.add(artista);
                 return true;
             }else{
                 return false;
@@ -62,8 +62,8 @@ public class RockRollRadio {
     
     
         public boolean  addCancion (Cancion cancion){
-            if (!canciones.contains(cancion)){
-                canciones.add(cancion);
+            if (!this.canciones.contains(cancion)){
+                this.canciones.add(cancion);
                 return true;
             }else{
                 return false;
@@ -71,27 +71,61 @@ public class RockRollRadio {
         }
             
         public boolean  addEmision (Emision  emision ){
-            if (!canciones.contains(emision)){
-                canciones.add(emision);
+            if (!this.emisiones.contains(emision)){
+                this.emisiones.add(emision);
                 return true;
             }else{
                 return false;
             }
         }
-            
-           
-                    
-                    
-    addInvitado
-    
-    
-    
-    
+        
+        
+        public boolean  addInvitado (Invitado  invitado){
+            if (!this.invitados.contains(invitado)){
+                this.invitados.add(invitado);
+                return true;
+            }else{
+                return false;
+            }
+        }
+        
+        
+/* getts */
+        
+      public Locutor  getLocutor(int  index){
+                return this.locutores.get(index);
+        }   
    
-    
-    
   
     
     
     
+ public Programa  getPrograma(int  index){
+                return this.programas.get(index);
+        }
+    
+ public Artista  getArtista (int  index){
+                return this.artistas.get(index);
+        }
+            
+    
+    
+
+            
+    public Cancion  getCancion (int  index){
+                return this.canciones.get(index);
+        }
+        
+          public Emision  getEmision (int  index){
+                return this.emisiones.get(index);
+        }
+        
+        
+        public Invitado  getInvitado (int  index){
+                return this.invitados.get(index);
+        }
+            
+           
+                    
+                
 }
