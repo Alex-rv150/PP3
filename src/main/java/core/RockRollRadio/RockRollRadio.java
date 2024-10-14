@@ -141,7 +141,7 @@ public class RockRollRadio {
                     
                     for(Cancion cancion: emision.getCanciones()){
                     
-                        if(cancion == cancion_artista){
+                        if(cancion.equals(cancion_artista)){
                             veces = veces +1;
                         }
                     
