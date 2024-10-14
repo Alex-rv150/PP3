@@ -19,4 +19,6 @@ public class Artista extends Persona{
         }
         return false;
     }
+    
+    
 }
