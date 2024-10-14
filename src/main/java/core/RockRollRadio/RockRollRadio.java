@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.RockRollRadio;
 
-/**
- *
- * @author arang
- */
+import core.Cancion.Cancion;
+import core.Persona.Artista;
+import java.util.ArrayList;
+
+
 public class RockRollRadio {
     
+    private ArrayList<Artista> artistas;
+    private ArrayList<Cancion> cancion;
 }
