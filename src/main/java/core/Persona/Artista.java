@@ -19,6 +19,10 @@ public class Artista extends Persona{
         }
         return false;
     }
+
+    public ArrayList<Cancion> getCanciones() {
+        return canciones;
+    }
     
     
 }

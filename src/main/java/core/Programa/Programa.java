@@ -32,4 +32,10 @@ public class Programa {
     public Emision getLastEmision(){
         return emisiones.get(emisiones.size() -1);
     }
+
+    public ArrayList<Emision> getEmisiones() {
+        return emisiones;
+    }
+    
+    
 }
