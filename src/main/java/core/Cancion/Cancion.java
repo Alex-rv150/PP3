@@ -13,5 +13,7 @@ public class Cancion {
         this.nombre =nombre;
         this.artista= artista;
         this.genero= genero;
+        
+        this.artista.addCancion(this);
     }
 }
