@@ -8,6 +8,6 @@ package core.Genero;
  *
  * @author arang
  */
-public class Genero {
-    
+public enum Genero {
+    ROCK, CLASICA, TROPICAL
 }
