@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.Programa;
 
-/**
- *
- * @author arang
- */
+import core.Persona.Locutor;
+import core.Programa.Emision.Emision;
+import java.util.ArrayList;
+
+
 public class Programa {
+    private String nombre;
+    private int serial;
+    private ArrayList<Emision> emisiones;
+    private ArrayList<Locutor> locutores;
     
+    public Programa (String nombre, Locutor locutor){
+        this.nombre= nombre;
+        this.serial= 0;
+        this.emisiones= new ArrayList<>();
+        this.locutores= new ArrayList<>();
+        
+        locutores.add(locutor);
+    }
 }
