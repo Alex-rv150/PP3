@@ -10,14 +10,22 @@ public class Programa {
     private String nombre;
     private int serial;
     private ArrayList<Emision> emisiones;
-    private ArrayList<Locutor> locutores;
+    private Locutor locutor;
     
     public Programa (String nombre, Locutor locutor){
         this.nombre= nombre;
         this.serial= 0;
         this.emisiones= new ArrayList<>();
-        this.locutores= new ArrayList<>();
-        
-        locutores.add(locutor);
+        this.locutor= locutor;
+
+        this.locutor.addPrograma(this);
+    }
+    
+    public boolean addEmision(Emision emision){
+        if(!this.emisiones.contains(emision)){
+            this.emisiones.add(emision);
+            return true;
+        }
+        return false;
     }
 }

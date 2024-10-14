@@ -18,5 +18,7 @@ public class Emision {
         this.canciones= new ArrayList<>();
         this.invitados= new ArrayList<>();
         this.programa= programa;
+        
+        this.programa.addEmision(this);
     }
 }
