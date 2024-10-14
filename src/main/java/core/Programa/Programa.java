@@ -28,4 +28,8 @@ public class Programa {
         }
         return false;
     }
+    
+    public Emision getLastEmision(){
+        return emisiones.get(emisiones.size() -1);
+    }
 }
