@@ -77,12 +77,23 @@ public class RockRollRadio {
         
         emision.addInvitado(invitado);
         
+        
         if (!this.invitados.contains(invitado)) {
             this.invitados.add(invitado);
+            int num;
+            num = invitados.indexOf(invitado);
+            invitados.get(num).addEmision(emision);
+        
             return true;
         } else {
+            int num;
+            num = invitados.indexOf(invitado);
+            invitados.get(num).addEmision(emision);
+        
             return false;
         }
+        
+     
     }
 
     /* getts */

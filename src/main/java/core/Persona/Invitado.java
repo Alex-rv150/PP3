@@ -14,5 +14,9 @@ public class Invitado extends Persona{
         this.emisiones= new ArrayList<>();
        
     }
+    public boolean addEmision(Emision emision){
+        emisiones.add(emision);
+        return true;
+    }
     
 }
