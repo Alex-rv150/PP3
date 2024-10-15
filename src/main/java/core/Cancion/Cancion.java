@@ -16,4 +16,9 @@ public class Cancion {
         
         this.artista.addCancion(this);
     }
+    
+    
+    public String getName(){
+        return this.nombre;
+    }
 }

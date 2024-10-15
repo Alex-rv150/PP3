@@ -129,38 +129,50 @@ public class RockRollRadio {
         
       Programa programa_max = this.programas.get(0);
       int veces_max = 0;
-      for ( Cancion cancion_artista : artista.getCanciones()) {
-            
-          
-          
-            for (Programa programa: this.programas){
+     
+        
+      for (Programa programa: this.programas){
                 int veces = 0 ; 
                 
-                for(Emision emision: programa.getEmisiones()){
+                for ( Cancion cancion_artista : artista.getCanciones()) {
+                /*System.out.println("Programa:" +programa.getNombre());*/
+                
+                    for(Emision emision: programa.getEmisiones()){
                     
                     
                     for(Cancion cancion: emision.getCanciones()){
                     
                         if(cancion == cancion_artista){
                             veces = veces +1;
+                            //System.out.println(cancion.getName() + veces);
                         }
                     
                     }
 
                 }
                 
-            if (veces > veces_max){
-            programa_max = programa;
-            }
+           
             
-            }
-    
-    } 
+            }  
       
-    return programa_max;
+         if (veces > veces_max){
+            programa_max = programa;
+            veces_max = veces;
+            }
         
-    
+        
+      }
+    return programa_max;
     }
+    
+    
+    
+    
+   
+        
+        
+      
+     
 
     
                     
